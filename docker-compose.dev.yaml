@@ -4,7 +4,7 @@ services:
     rhythm-bot-server:
         build:
             context: './'
-            dockerfile: './Containerfile'
+            dockerfile: './Dockerfile'
         volumes:
             - './data:/home/rhythmbot/data'
         environment:

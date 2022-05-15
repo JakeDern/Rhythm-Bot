@@ -9,6 +9,14 @@
         "start:prod": "NODE_ENV=production node --trace-warnings dist/app",
         "build": "tsc"
     },
+    "mikro-orm": {
+        "useTsNode": true,
+        "tsConfigPath": "./tsconfig.mikro-orm.json",
+        "configPaths": [
+            "./src/mikro-orm.config.ts",
+            "./dist/mikro-orm.config.js"
+        ]
+    },
     "author": "Malexion",
     "license": "MIT",
     "repository": {
@@ -31,6 +39,7 @@
         "moment": "^2.27.0",
         "sodium": "^3.0.2",
         "source-map-support": "^0.5.20",
+        "sqlite3": "^5.0.8",
         "utf-8-validate": "^5.0.2",
         "uuid": "^8.3.2",
         "winston": "^3.3.3",
